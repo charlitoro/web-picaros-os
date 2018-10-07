@@ -1,0 +1,9 @@
+.main-header {
+  background: url(../img/desktop-picaros.jpg);
+  background-size: cover;
+  min-height: 1000p;
+}
+
+.background-overlay {
+  background: rgb(33, 76, 99, 0.6)
+}
