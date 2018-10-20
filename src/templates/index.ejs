@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <% include partials/head.ejs %>
+    
+  <body>
+    
+    <% include partials/navigation.ejs %>
+
+    <!-- Heder -->
+    ::next
+    <header class="main-header">
+      <div class="background-overlay text-white py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <h1>Minino PicarOS</h1>
+              <h2>Sistema Operativo para niños</h2>
+              <p>Sistema operativo base linux desarrollado por Galpon Minino.
+                Esta versión es dedicada exclusivamente para la educación de
+                niños. Una excelente sistema que puede ser utilizado
+                en pequeñas escuelas, que cuenten con equipos de baja rendimiento
+                por sus características de hardware. Sus juegos y herramientas
+                lo hacen muy atractivo, ademas de su agradables gráficos.
+                <br><br>
+                Este sitio recopila lo mas destacado de este sistema, así como
+                también su instalación...
+              </p>
+                <a href="#" class="btn btn-outline-secondary">
+                  Read More
+                </a>
+            </div>
+            <div class="col-md-6">
+              <img src="/img/post-picaros.png" width="80%" alt="Image Post PicarOS"
+                  class='img-fluid'>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- FEATURES -->
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card text-center border-primary">
+              <div class="card-body">
+                <h3>Bajos Requerimientos</h3>
+                <ul class="text-left">
+                  <li >Procesador P4-1500MHz (o equivalente)</li>
+                  <li >512 MB de RAM</li>
+                  <li >10 GB de disco.</li>
+                  <li >Versión híbrida DVDvivo/USBvivo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-white text-center bg-primary">
+              <div class="card-body">
+                <h3>Orientado a la educación</h3>
+                <p class="text-left">
+                  Sistema creado para la educación de niños de entre 3 y 12 años.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center border-primary">
+              <div class="card-body">
+                <h3>Gratuito</h3>
+                <p class="text-left">
+                  Puesto que el sistema esta creado en base linux, la descarga
+                  es totalmente gratuita, así como su distribución sin costo
+                  alguno. Al ser open source, se puede utilizar en las
+                  instituciones educativas sin realizar proceso alguno.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-white text-center bg-primary">
+              <div class="card-body">
+                <h3>Distribuición actualizada</h3>
+                <p class="text-left">
+                  A pesar que no es una distribución conocida, cuanta con
+                  actualizaciones anuales. La ultima actualización realizada
+                  fue en enero de 2017, con cambio significativos. Esto refleja
+                  el compromiso de mantener el proyecto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="m5 text-left bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="m-5">
+            <h3>Acerca del sistema</h3>
+            <p>
+              Estamos ante una distro basada en Debian (principalmente Jessie,
+              aunque toca un poco todas las ramas) sin systemd y de comportamiento
+              ligero ya que viene con el escritorio LXDE. Versión personalizada
+              para Enseñanza Primaria (3-12 años), con un escritorio y
+              funcionalidades pensadas para que sea agradable y cómoda para
+              los pequeños.<br><br>
+
+              GALPon MiniNo es una distribución de GNU/Linux creada para ejecutarse
+              en equipos con pocos recursos hardware u obsoletos (hasta 10 o 12
+              años de antigüedad). PicarOS es una versión de Mininos, que como
+              ya se ha dicho anteriormente, se enfoca para niños de entre 3 y 12 años.
+              <br><br>
+              Un trabajo de arte característico y original donde destacan los iconos
+              Gartoon Redux, y que envuelve cientos de utilidades interesantes.
+              Algunas de ellas de fabricación propia (herramientas de control
+              parental como “pequerrechos” o scripts tipo “caracol” para gestionar
+              efectos visuales y servicios), otras tomadas prestadas de proyectos
+              similares (Huayra) y clásicos como la suite GCompris o PlayonLinux.
+              <br><br>
+              La edición 2017 que acaba de salir, actualiza esa colección de
+              programas y la amplía con nuevas adquisiciones: el editor de vídeo
+              Kdenlive, Huayra Caripela (sirve para crear avatares), Huayra Compartir
+              (en red local), Reloj (cuenta atrás con música), Foto Puzzle, un juego
+              de palabras llamado Anagramarama, Huayra Stopmotion, el curso de
+              música LenMus, el programa de doblaje OggBikoiztu, Bingoedu (no lo
+              patrocina ninguna asociación de ludópatas, más bien parece un método
+              de aprendizaje), Impresive para hacer presentaciones de PDF, Compresor
+              PDF y Picapalabra (juego basado en un concurso de TV con nombre similar).
+            </p>
+            <h4>Diego, personaje del sistema</h4>
+            <img src="/img/logo-picaros.png" width="20%" height="20%" class="d-inline-block align-top" alt="">
+            <br><br>
+            <p>Diego es el avatar oficial del sistema Mininos PicarOS, así el
+              sistema también es conocido como PicarOS Diego. Este personaje nos
+              acompañara en muchas de las vistas que tiene el sistema, ademas
+              cuenta con una vos, pero que se escucha cuando se enciende o apaga
+              el sistema y en algunas otras acciones. Es algo muy divertido el
+              tener un personaje para los niños.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <% include partials/footer.ejs %>
+
+    <!-- Bootstrap JS-->
+    <% include partials/scripts.ejs %>
+
+  </body>
+</html>

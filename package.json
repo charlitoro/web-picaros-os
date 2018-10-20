@@ -1,0 +1,17 @@
+{
+  "name": "web-picaros",
+  "version": "1.0.0",
+  "description": "Pagina web acerca del sistema operativo Minino PicarOS",
+  "main": "index.js",
+  "author": "@Andres",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

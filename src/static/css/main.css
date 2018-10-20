@@ -20,3 +20,18 @@
 .team {
   background: #30336b;
 }
+
+.vinieta1{
+list-style-image: url(../img/list-procesador.png);
+width: 10%;
+height: 10%;
+ }
+ .vinieta2{
+list-style-image: url(../img/list-ram.png);
+ }
+ .vinieta3{
+list-style-image: url(../img/list-dd.png);
+ }
+ .vinieta4{
+list-style-image: url(../img/list-usb.png);
+ }

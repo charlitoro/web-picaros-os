@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <% include partials/head.ejs %>
+
+  <body>
+    <!-- NAVBAR-->
+    <% include partials/navigation.ejs%>
+    
+    ::next
+    <!-- TEAM -->
+    <section class="text-center team">
+      <div class="container p-5">
+        <h1 class="text-center text-white">Contactos</h1>
+        <p class="text-white">
+          Este articulo fue realizado por estudiantes de Ingeniería de Sistemas
+          de la Universidad de Nariño, Colombia, con el objetivo de dar a conocer
+          nuevas metodologías de enseñanza a través de sistemas operativos que
+          se enfocan en la educación de niños.
+        </p>
+        <div class="row">
+          <!-- USER TEAM -->
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/person.png" class="img-fluid rounded-circle w-50">
+                <h3>Carlos Andres Toro</h3>
+                <p>
+                  <ul class="text-left">
+                    <li>Tecnólogo en Computación y estudiante de Ingeniería de Sistemas, sexto semestre.</li>
+                    <li>Desarrollador web backend.</li>
+                  </ul>
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-4">
+                    <a href="https://www.facebook.com/charlitoro26"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="https://twitter.com/carlos_toro_12"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="https://www.instagram.com/__andrestoro/"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/person.png" class="img-fluid rounded-circle w-50">
+                <h3>Kandel Lucero Yandar</h3>
+                <p>
+                  Estudiante de Ingeniería de Sistemas, sexto semestre.
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-4">
+                    <a href="https://www.facebook.com/profile.php?id=100001136055300"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="https://www.instagram.com/kandel_yandar/"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/person.png" class="img-fluid rounded-circle w-50">
+                <h3>Erika Dayana Orbes</h3>
+                <p>
+                  Estudiante de Ingeniería de Sistemas, sexto semestre.
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-4">
+                    <a href="https://www.facebook.com/erika.orbes"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="https://www.instagram.com/erikaorbes/"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/person.png" class="img-fluid rounded-circle w-50">
+                <h3>Juan Sebastian Rubio</h3>
+                <p>
+                  Estudiante de Ingeniería de Sistemas, sexto semestre.
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-4">
+                    <a href="https://www.facebook.com/ssebastian.rubio"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="https://www.instagram.com/sebastian.rubio12/"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>Contáctenos</h3>
+            <p>
+              Envíanos un correo y nosotros nos atenderemos su llamado.
+            </p>
+            <form action="">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <i class="fas fa-user input-group-text"></i>
+                </div>
+                <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <i class="fas fa-envelope input-group-text"></i>
+                </div>
+                <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <i class="fas fa-pencil-alt input-group-text"></i>
+                </div>
+                <textarea name="" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <% include partials/footer.ejs %>
+
+    <!-- Bootstrap JS-->
+    <% include partials/scripts.ejs %>
+
+  </body>
+</html>
