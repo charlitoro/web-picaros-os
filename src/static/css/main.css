@@ -35,3 +35,26 @@ list-style-image: url(../img/list-dd.png);
  .vinieta4{
 list-style-image: url(../img/list-usb.png);
  }
+
+ .bd-footer-links {
+
+  padding-left: 0;
+  margin-bottom: 1rem;
+
+}
+
+.footer-ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.footer-li {
+  float: left;
+}
+
+.footer-li-a {
+  padding: 16px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+} 

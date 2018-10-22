@@ -1,1 +1,13 @@
-service:
+version: '3'
+services:
+    node-picaros:
+        build: ./
+        container_name: docker-node
+        command: npm start
+        user: 1000:1000
+        ports:
+            - 5500:5500
+        volumes:
+            - ./:/usr/app/
+            - /usr/app/node_modules
+    
