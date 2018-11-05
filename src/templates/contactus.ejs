@@ -116,26 +116,26 @@
             <p>
               Envíanos un correo y nosotros te responderemos.
             </p>
-            <form action="">
+            <form action="" name='form-email' method="GET">
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <i class="fas fa-user input-group-text"></i>
                 </div>
-                <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" name="username" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <i class="fas fa-envelope input-group-text"></i>
                 </div>
-                <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" name="email" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
               </div>
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <i class="fas fa-pencil-alt input-group-text"></i>
                 </div>
-                <textarea name="" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
+                <textarea  neme="message" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-block">Send</button>
+              <button type="submit" class="btn btn-primary btn-block" onClick=" sendEmail(this.form)">Send</button>
             </form>
           </div>
         </div>
