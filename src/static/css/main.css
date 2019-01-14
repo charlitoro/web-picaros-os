@@ -1,5 +1,5 @@
 .main-header {
-  position: relative;
+  position: static;
   background: url(../img/desktop-picaros.jpg);
   background-size: cover;
   min-height: 1000p;
@@ -46,4 +46,9 @@
 
 p {
   font-size: large;
+}
+
+.button-end {
+  position: static;
+  bottom: 0%;
 }
