@@ -4224,11 +4224,13 @@ input[type="button"].btn-block {
   display: block;
 }
 
-.navbar {
-  position: relative;
+#navbar {
+  position: fixed;
+  /* top: 0; */
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /* display: block; */
+  transition: top 0.8s;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -4240,8 +4242,8 @@ input[type="button"].btn-block {
   padding: 1rem 1rem;
 }
 
-.navbar > .container,
-.navbar > .container-fluid {
+#navbar > .container,
+#navbar > .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
