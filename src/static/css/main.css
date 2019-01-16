@@ -1,5 +1,6 @@
 .main-header {
   position: static;
+  margin-block-start: 4%;
   background: url(../img/desktop-picaros.jpg);
   background-size: cover;
   min-height: 1000p;
