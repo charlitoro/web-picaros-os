@@ -49,7 +49,7 @@ app.post('/contactus', urlencodedParser, (req, res) => {
 
   const mailOptions = {
     from: 'carlostoro04@gmail.com',
-    to: 'carlostoro04@gmail.com, jmmb65@yahoo.com',
+    to: 'carlostoro04@gmail.com',
     subject: 'Contacto Minino PicarOS',
     html: `<h3> Email de contacto de Minino PicarOS </h3>
             <p> Email enviado por: ${data.username}</p>
