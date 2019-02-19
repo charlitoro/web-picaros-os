@@ -44,7 +44,7 @@ app.post('/contactus', urlencodedParser, (req, res) => {
   const data = {
     username: req.body.username,
     email: req.body.email,
-    message: req.body.message
+    mensaje: req.body.mensaje,
   }
 
   const mailOptions = {
@@ -56,9 +56,9 @@ app.post('/contactus', urlencodedParser, (req, res) => {
             <p> Correo Electronico: ${data.email}</p>
             <p> --------------------------------------------------------------------</p>
             <h2>Mensaje enviado</h2>
-            <p>${data.message}</p>`,
+            <p> ${data.mensaje} </p>`,
   };
-
+  console.log(data)
   transporter.sendMail(mailOptions, (err, info) => {
     if (err){
       console.log(err)
