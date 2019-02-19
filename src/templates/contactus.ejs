@@ -115,7 +115,7 @@
             <p>
               Envíanos un correo y nosotros te responderemos.
             </p>
-            <form action="" name='form-email' method="GET">
+            <form action="" name='form-email' method="POST" action='/contactus'>
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <i class="fas fa-user input-group-text"></i>
@@ -132,9 +132,9 @@
                 <div class="input-group-prepend">
                   <i class="fas fa-pencil-alt input-group-text"></i>
                 </div>
-                <textarea  neme="message" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
+                <textarea type="textarea" neme="message" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-block" onClick=" sendEmail(this.form)">Send</button>
+              <button type="submit" class="btn btn-primary btn-block" onClick="sendEmail(this.form)">Send</button>
             </form>
           </div>
         </div>

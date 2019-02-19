@@ -1,29 +1,20 @@
-import nodemailer from 'nodemailer';
-
 console.log("si entro ");
 
 function sendEmail(forms){
     username = forms.username.value;
     email = forms.email.value;
     message = forms.message.value;
-    const transporter = nodemailer.createTransport({
-        service: 'hotmail',
-        auth:{
-        user:'charlesandrew12@hotmail.com',
-        pass:'bajo3palos8010'
-        }
-    });
-    const emailToSend = {
-        from: 'charlesandrew12@hotmail.com',
-        to: email,
-        subject: 'Email contactenos - Minino PicarOS',
-        text: message,
-    }
-    transporter.sendMail(emailToSend, (error, info) =>{
-        if (error){
-        console.log(error);
-        }else{
-        console.log('Email send' + info.response);
-        }
-    });
+    
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "carlostoro04@gmail.com",
+        Password: "f7c4602c-39fc-49a6-9efc-f28da7f07f01",
+        to: "carlostoro04@gmail.com",
+        from: "carlostoro04@gmail.com",
+        subject: "Contacto Minino PicarOS",
+        Body: `Email enviado por ${email}\n
+                Contenido del mensaje: ${message}`
+    }).then(
+        message => alert("Gracias por mensaje, nos comunicares lo más pronto posible")
+    )
 }

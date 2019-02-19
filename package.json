@@ -10,7 +10,8 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
-    "nodemailer": "^4.6.8"
+    "nodemailer": "^4.6.8",
+    "xmlhttprequest": "^1.8.0"
   },
   "scripts": {
     "start": "node index.js"
