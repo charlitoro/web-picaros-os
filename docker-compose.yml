@@ -1,12 +1,13 @@
-version: '3'
+version: '3.8'
 services:
-    node-picaros:
-        build: ./
-        container_name: docker-node
-        command: npm start
-        ports:
-            - 5500:5500
-        volumes:
-            - ./:/usr/app/
-            - /usr/app/node_modules
-    
+  web:
+    image: node:18.15.0-alpine3.17
+    working_dir: /usr/app
+    container_name: web-picaros
+    command: npm start
+    ports:
+        - 5500:5500
+    volumes:
+        - ./:/usr/app/
+        - /usr/app/node_modules
+     
